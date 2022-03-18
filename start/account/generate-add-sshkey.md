@@ -60,6 +60,8 @@ following:
      ...
 
 The part you want to upload is the content of the `.pub` file (~/.ssh/id_rsa.pub)
+The video below shows the ssh-key genearation login from terminal
+[Creating Keys and Logging Into OSG Connect on the Terminal (Mac/Linux/Windows10)](https://www.youtube.com/watch?v=sKXqRjKm4bM&ab_channel=OSG) 
 
 ### Windows, using Putty to log in
 
@@ -113,6 +115,9 @@ be added to the login nodes within a couple hours.
 
 After following the steps above to upload your key and it's been a few hours, you should 
 be able to log in to OSG Connect. 
+
+The video below shows the ssh-key genearation login using puTTy 
+[Creating Keys and Logging Into OSG Connect with PuTTY and PuTTYgen (Windows)](https://www.youtube.com/watch?v=zk1uo1nA2HA&t=2s&ab_channel=OSG) 
 
 ### Determine which login node to use
 
