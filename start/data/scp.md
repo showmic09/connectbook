@@ -1,16 +1,15 @@
-[title]: - "Use scp To Transfer Files To and From OSG Connect"
+[title]: - "Use scp and WinSCP To Transfer Files To and From OSG Connect"
 
 [TOC]
 
 # Overview
 
-This tutorial assumes that you will be using a command line application 
-for performing file transfers instead of a GUI-based application such as WinSCP. 
-
 You can transfer files to and from the OSG Connect login node using the 
-`scp` command. Note `scp` is a counterpart to the secure shell 
+`scp` command and `WinSCP` software. Note `scp` is a counterpart to the secure shell 
 command,`ssh`, that allows for secure, encrypted file transfers between 
 systems using your ssh credentials.
+
+# Transfer Files using scp
 
 When using `scp`, you will always need to specify both the source of the
 content that you wish to copy and the destination of where you would like 
@@ -21,7 +20,7 @@ the copy to end up. For example:
 Files on remote systems (like an OSG Connect login node) are indicated using
 `username@machine:/path/to/file`.
 
-# Transfer Files To OSG Connect
+## Transfer Files To OSG Connect
 
 Let's say you have a file name `my_file.txt` you wish to transfer to the OSG Connect login node.
 
@@ -46,7 +45,7 @@ For example:
 
     $ scp -r my_Dir username@loginNN.osgconnect.net:/home/username/
 
-# Transfer Files From OSG Connect
+## Transfer Files From OSG Connect
 
 To transfer files from OSG Connect back to your laptop or desktop you can use the `scp` as shown above, 
 but with the OSG Connect location being the source (listed first) and the destination being a location on your personal computer:
@@ -55,7 +54,7 @@ but with the OSG Connect location being the source (listed first) and the destin
 
 where `./` sets the destination of the copy to your current location on your computer 
 
-# Transfer Files Between OSG Connect and Another Server
+## Transfer Files Between OSG Connect and Another Server
 
 `scp` can be used to transfer files between OSG Connect and another server that you have 
 `ssh` access to. This means that files don't have to first be transferred to your 
@@ -66,6 +65,14 @@ a file from another server and your OSG Connect login node `/home` directory wit
 
 Be sure to use the username assigned to you on the other server and to provide the 
 full path on the other server to your file.
+
+# Transfer Files using WinSCP
+
+Usually it is convenient to upload and download files between your personal computer and OSG Connect through a Graphic User Interface (GUI). Download and install the third party application [WinSCP](http://winscp.net/eng/download.php) to connect the file systems between your personal computer and OSG Connect. Below is a step-by-step installation guide.
+
+## Input Host Information
+
+
 
 # Get Help
 
